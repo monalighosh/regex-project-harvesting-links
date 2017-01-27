@@ -1,0 +1,192 @@
+/*------ External Fonts ------*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+
+/*------ Reset Styles ------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1.2;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------ General Page Styling ------*/
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%; /* 16px */
+	font-weight: 400;
+	color: #333;
+	background: #fff;
+}
+
+input, select, textarea, button {
+	font-family: inherit;
+	font-size: inherit;
+	outline: none;
+	color: inherit;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: normal;
+	text-shadow: 0 0 10px #999, 0 0 20px #ccc;
+	color: #000;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+	border: none;
+	color: #000;
+}
+
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+/*------ Wrapper Styles ------*/
+
+.wrapper {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+/*------ Header Styles ------*/
+
+header {
+	width: 100%;
+	background: rgba(43,101,208,1);
+	padding: 1em;
+}
+
+header p {
+	font-size: 1.5em;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+/*------ Section Styles ------*/
+
+section {
+	width: 100%;
+	padding: 1em 0;
+}
+
+textarea {
+	display: block;
+	border: 1px solid #bbb;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+input[type="reset"],
+input[type="submit"] {
+	background: #ccc;
+	cursor: pointer;
+	padding: 0.8em;
+	color: #656464;
+	border: 1px solid #bbb;
+	transition: background 0.5s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	color: #333;
+	background: #fff;
+}
+
+.uploadWrapper {
+	background: #ccc;
+	margin-right: 1em;
+	padding: 0.7em;
+	display: inline-block;
+	border: 1px solid #bbb;
+}
+
+.result {
+	display: none;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 1.5em 0;
+	padding: 1em;
+}
+
+/*------ Footer Styles ------*/
+
+footer {
+	position: fixed;
+	width: 100%;
+	max-width: 1024px;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	background: #ddd;
+	padding: 0.5em;
+	text-align: center;
+}

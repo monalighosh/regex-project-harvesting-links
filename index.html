@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Link Harvester</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header><p>Link Harvester</p></header>
+		<section>
+			<form id="myForm" action="" method="post">
+				<textarea name="inputText" rows="15" cols="130" id="inputText"></textarea>
+				<div class="uploadWrapper">
+					<label for="fileupload">Upload File</label>
+					<input type="file" name="fileupload" value="fileupload" id="fileupload">
+				</div>
+				<input type="reset" name="clear" id="clear" value="Clear">
+				<input type="submit" name="submit" id="submit" value="Harvest Links" class="floatRight">
+				<div class="result" id="result"></div>
+			</form>
+		</section>
+		<footer>&copy; 2016 Link Harvester</footer>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
